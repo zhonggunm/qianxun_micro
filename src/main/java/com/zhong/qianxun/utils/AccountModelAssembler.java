@@ -1,4 +1,4 @@
-package com.zhong.db.postgres.utils;
+package com.zhong.qianxun.utils;
 
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
@@ -7,8 +7,8 @@ import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.server.RepresentationModelAssembler;
 import org.springframework.stereotype.Component;
 
-import com.zhong.db.postgres.model.Account;
-import com.zhong.db.postgres.resources.AccountController;
+import com.zhong.qianxun.model.Account;
+import com.zhong.qianxun.resources.AccountController;
 
 
 @Component

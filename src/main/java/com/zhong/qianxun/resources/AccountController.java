@@ -1,4 +1,4 @@
-package com.zhong.db.postgres.resources;
+package com.zhong.qianxun.resources;
 
 
 import java.util.List;
@@ -20,10 +20,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.zhong.db.postgres.exceptions.AccountNotFoundException;
-import com.zhong.db.postgres.model.Account;
-import com.zhong.db.postgres.repository.AccountRepository;
-import com.zhong.db.postgres.utils.AccountModelAssembler;
+import com.zhong.qianxun.exceptions.AccountNotFoundException;
+import com.zhong.qianxun.model.Account;
+import com.zhong.qianxun.repository.AccountRepository;
+import com.zhong.qianxun.utils.AccountModelAssembler;
 
 @RestController
 public class AccountController {

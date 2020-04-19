@@ -1,4 +1,4 @@
-package com.zhong.db.postgres.utils;
+package com.zhong.qianxun.utils;
 
 import lombok.extern.slf4j.Slf4j;
 

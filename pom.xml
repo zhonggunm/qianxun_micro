@@ -6,13 +6,13 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.2.6.RELEASE</version>
-		<relativePath/> <!-- lookup parent from com.zhong.db.postgres.repository -->
+		<relativePath/> <!-- lookup parent from com.zhong.qianxun.repository -->
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>rest</artifactId>
+	<groupId>com.zhong.qianxun</groupId>
+	<artifactId>account</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>demo</name>
-	<description>Demo project for Spring Boot</description>
+	<name>Account</name>
+	<description>Qianxun Account Service</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -70,7 +70,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>dvd_rental_service</finalName>
+		<finalName>qianxun_account</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -86,7 +86,7 @@
 					<archive>
 						<manifest>
 							<!-- give full qualified name of your main class -->
-							<mainClass>com.zhong.db.postgres.DemoApplication</mainClass>
+							<mainClass>com.zhong.qianxun.QianxunApplication</mainClass>
 						</manifest>
 					</archive>
 				</configuration>

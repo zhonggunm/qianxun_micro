@@ -1,4 +1,4 @@
-package com.zhong.db.postgres.model;
+package com.zhong.qianxun.model;
 
 import lombok.Data;
 

@@ -1,4 +1,4 @@
-package com.zhong.db.postgres.aop;
+package com.zhong.qianxun.aop;
 
 
 import org.springframework.http.HttpStatus;
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
-import com.zhong.db.postgres.exceptions.AccountNotFoundException;
+import com.zhong.qianxun.exceptions.AccountNotFoundException;
 
 @ControllerAdvice
 public class AccountNotFoundAdvice {

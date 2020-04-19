@@ -1,4 +1,4 @@
-package com.zhong.db.postgres.exceptions;
+package com.zhong.qianxun.exceptions;
 
 public class AccountNotFoundException extends RuntimeException {
 

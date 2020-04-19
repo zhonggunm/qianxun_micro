@@ -5,16 +5,19 @@ import lombok.Data;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Data
 @Entity
-@Table(name = "actor")
-public class Actor {
+@Table(name = "accounts")
+public class Account {
 
-	@Column(name = "actor_id")
-  private @Id @GeneratedValue Long id;
+	@Column(name = "id")
+  private @Id 
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  Long id;
   
   @Column(name = "first_name")
   private String firstName;
@@ -22,9 +25,9 @@ public class Actor {
   @Column(name = "last_name")
   private String lastName;
 
-  Actor() {}
+  Account() {}
 
-  public Actor(String firstName, String lastName) {
+  public Account(String firstName, String lastName) {
     this.firstName = firstName;
     this.lastName = lastName;
   }

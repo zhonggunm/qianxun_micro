@@ -7,15 +7,15 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
-import com.zhong.db.postgres.exceptions.ActorNotFoundException;
+import com.zhong.db.postgres.exceptions.AccountNotFoundException;
 
 @ControllerAdvice
-public class ActorNotFoundAdvice {
+public class AccountNotFoundAdvice {
 
   @ResponseBody
-  @ExceptionHandler(ActorNotFoundException.class)
+  @ExceptionHandler(AccountNotFoundException.class)
   @ResponseStatus(HttpStatus.NOT_FOUND)
-  String employeeNotFoundHandler(ActorNotFoundException ex) {
+  String employeeNotFoundHandler(AccountNotFoundException ex) {
     return ex.getMessage();
   }
 }

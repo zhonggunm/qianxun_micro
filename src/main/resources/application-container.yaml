@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://mypostgres:5432/dvdrental
+    username: postgres
+    password: cms@spring
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    generate-ddl: false
